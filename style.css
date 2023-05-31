@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 10vmax);
+  grid-template-rows: repeat(10, 10vh);
+  background-color: rgb(185, 185, 185);
+}
+
+#game-board {
+  /* Positioning */
+  grid-column: 4/8;
+  grid-row: 3/8;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-self: center;
+  justify-content: center;
+
+  /* Sizes */
+  max-width: 600px;
+  max-height: 600px;
+  min-width: 500px;
+  min-height: 500px;
+
+  /* Design */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 10px rgb(73, 73, 73);
+  background-color: rgb(231, 231, 231);
+}
+
+.regular-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.empty-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+}
