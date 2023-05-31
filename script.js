@@ -65,6 +65,6 @@ function getRandomInt(min, max) {
 
 // Init game
 const htmlBoard = document.getElementById("game-board");
-const board = new Board(5);
+const board = new Board(4);
 board.initFields();
 board.showFields();
